@@ -71,7 +71,9 @@ class EmployeeController extends Controller
         ]);
 
         $employee->update($validatedData);
-        return new EmployeeResource($employee);
+        return response()->json([
+            'message' => 'Employee updated'
+        ]);
     }
 
     /**
