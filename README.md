@@ -29,4 +29,8 @@ php artisan serve
 
 ## Postman API Documentation
 
-<a href="https://api.postman.com/collections/28574588-697c39af-a2f1-4eae-80ae-27e94aa857da?access_key=PMAT-01H5YQDD0PNCK05F460WBAE2WV" target="_blank">Download Dokumentasi</a>
+[Download Documentation](Manajemen_Karyawan.postman_collection.json)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
