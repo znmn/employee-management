@@ -471,11 +471,11 @@
 										},
 										{
 											"key": "Date",
-											"value": "Sat, 22 Jul 2023 09:26:53 GMT"
+											"value": "Sat, 22 Jul 2023 13:03:13 GMT"
 										},
 										{
 											"key": "Date",
-											"value": "Sat, 22 Jul 2023 09:26:53 GMT"
+											"value": "Sat, 22 Jul 2023 13:03:13 GMT"
 										},
 										{
 											"key": "Connection",
@@ -499,7 +499,7 @@
 										},
 										{
 											"key": "X-RateLimit-Remaining",
-											"value": "59"
+											"value": "58"
 										},
 										{
 											"key": "Access-Control-Allow-Origin",
@@ -507,7 +507,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"data\": {\n        \"id\": 11,\n        \"nomor_induk\": \"IP06011\",\n        \"nama\": \"Markus\",\n        \"alamat\": \"Jln Gaja Mada no 01, Surabaya\",\n        \"tanggal_lahir\": \"13-Jan-1992\",\n        \"tanggal_masuk\": \"09-Aug-2011\"\n    }\n}"
+									"body": "{\n    \"message\": \"Employee updated\"\n}"
 								},
 								{
 									"name": "Failed",
