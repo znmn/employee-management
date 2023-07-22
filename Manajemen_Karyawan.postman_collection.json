@@ -1,0 +1,1692 @@
+{
+	"info": {
+		"_postman_id": "697c39af-a2f1-4eae-80ae-27e94aa857da",
+		"name": "Manajemen Karyawan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28574588"
+	},
+	"item": [
+		{
+			"name": "Protected Routes",
+			"item": [
+				{
+					"name": "CRUD Data Karyawan",
+					"item": [
+						{
+							"name": "Get Data Karyawan",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/karyawan",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"karyawan"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:09:28 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:09:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nomor_induk\": \"IP06001\",\n            \"nama\": \"Agus\",\n            \"alamat\": \"Jln Gaja Mada no 12, Surabaya\",\n            \"tanggal_lahir\": \"11-Jan-1980\",\n            \"tanggal_masuk\": \"07-Aug-2005\"\n        },\n        {\n            \"id\": 2,\n            \"nomor_induk\": \"IP06002\",\n            \"nama\": \"Amin\",\n            \"alamat\": \"Jln Imam Bonjol no 11, Mojokerto\",\n            \"tanggal_lahir\": \"03-Sep-1977\",\n            \"tanggal_masuk\": \"07-Aug-2005\"\n        },\n        {\n            \"id\": 3,\n            \"nomor_induk\": \"IP06003\",\n            \"nama\": \"Yusuf\",\n            \"alamat\": \"Jln A Yani Raya 15 No 14 Malang\",\n            \"tanggal_lahir\": \"09-Aug-1973\",\n            \"tanggal_masuk\": \"07-Aug-2006\"\n        },\n        {\n            \"id\": 4,\n            \"nomor_induk\": \"IP06004\",\n            \"nama\": \"Alyssa\",\n            \"alamat\": \"Jln Bungur Sari V no 166, Bandung\",\n            \"tanggal_lahir\": \"18-Mar-1983\",\n            \"tanggal_masuk\": \"06-Sep-2006\"\n        },\n        {\n            \"id\": 5,\n            \"nomor_induk\": \"IP06005\",\n            \"nama\": \"Maulana\",\n            \"alamat\": \"Jln Candi Agung, No 78 Gg 5, Jakarta\",\n            \"tanggal_lahir\": \"10-Nov-1978\",\n            \"tanggal_masuk\": \"10-Sep-2006\"\n        },\n        {\n            \"id\": 6,\n            \"nomor_induk\": \"IP06006\",\n            \"nama\": \"Agfika\",\n            \"alamat\": \"Jln Nangka, Jakarta Timur\",\n            \"tanggal_lahir\": \"07-Feb-1979\",\n            \"tanggal_masuk\": \"02-Jan-2007\"\n        },\n        {\n            \"id\": 7,\n            \"nomor_induk\": \"IP06007\",\n            \"nama\": \"James\",\n            \"alamat\": \"Jln Merpati, 8 Surabaya\",\n            \"tanggal_lahir\": \"18-May-1989\",\n            \"tanggal_masuk\": \"04-Apr-2007\"\n        },\n        {\n            \"id\": 8,\n            \"nomor_induk\": \"IP06008\",\n            \"nama\": \"Octavanus\",\n            \"alamat\": \"Jln A Yani 17, B 08 Sidoarjo\",\n            \"tanggal_lahir\": \"14-Apr-1985\",\n            \"tanggal_masuk\": \"19-May-2007\"\n        },\n        {\n            \"id\": 9,\n            \"nomor_induk\": \"IP06009\",\n            \"nama\": \"Nugroho\",\n            \"alamat\": \"Jln Duren tiga 167, Jakarta Selatan\",\n            \"tanggal_lahir\": \"01-Jan-1984\",\n            \"tanggal_masuk\": \"16-Jan-2008\"\n        },\n        {\n            \"id\": 10,\n            \"nomor_induk\": \"IP06010\",\n            \"nama\": \"Raisa\",\n            \"alamat\": \"Jln Kelapa Sawit, Jakarta Selatan\",\n            \"tanggal_lahir\": \"17-Dec-1990\",\n            \"tanggal_masuk\": \"16-Aug-2008\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Detail Data Karyawan",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/karyawan/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"karyawan",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:07:40 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:07:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"nomor_induk\": \"IP06001\",\n        \"nama\": \"Agus\",\n        \"alamat\": \"Jln Gaja Mada no 12, Surabaya\",\n        \"tanggal_lahir\": \"11-Jan-1980\",\n        \"tanggal_masuk\": \"07-Aug-2005\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Tambah Data Karyawan",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nomor_induk\": \"IP06011\",\r\n    \"nama\": \"Mark\",\r\n    \"alamat\": \"Jln Gaja Mada no 01, Surabaya\",\r\n    \"tanggal_lahir\": \"13-Jan-92\",\r\n    \"tanggal_masuk\": \"09-Aug-11\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/karyawan",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"karyawan"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Failed",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nomor_induk\": \"IP06010\",\r\n    \"nama\": \"Agus\",\r\n    \"alamat\": \"Jln Gaja Mada no 12, Surabaya\",\r\n    \"tanggal_lahir\": \"11-Jann-80\",\r\n    \"tanggal_masuk\": \"07-Aung-01\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan"
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:09:03 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:09:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The nomor induk has already been taken. (and 2 more errors)\",\n    \"errors\": {\n        \"nomor_induk\": [\n            \"The nomor induk has already been taken.\"\n        ],\n        \"tanggal_lahir\": [\n            \"The tanggal lahir field must be a valid date.\"\n        ],\n        \"tanggal_masuk\": [\n            \"The tanggal masuk field must be a valid date.\"\n        ]\n    }\n}"
+								},
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nomor_induk\": \"IP06011\",\r\n    \"nama\": \"Mark\",\r\n    \"alamat\": \"Jln Gaja Mada no 01, Surabaya\",\r\n    \"tanggal_lahir\": \"13-Jan-92\",\r\n    \"tanggal_masuk\": \"09-Aug-11\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:24:57 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:24:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Employee created\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Data Karyawan",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nomor_induk\": \"IP06011\",\r\n    \"nama\": \"Markus\",\r\n    \"alamat\": \"Jln Gaja Mada no 01, Surabaya\",\r\n    \"tanggal_lahir\": \"13-Jan-92\",\r\n    \"tanggal_masuk\": \"09-Aug-11\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/karyawan/11",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"karyawan",
+										"11"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nomor_induk\": \"IP06011\",\r\n    \"nama\": \"Markus\",\r\n    \"alamat\": \"Jln Gaja Mada no 01, Surabaya\",\r\n    \"tanggal_lahir\": \"13-Jan-92\",\r\n    \"tanggal_masuk\": \"09-Aug-11\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan/11",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan",
+												"11"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:26:53 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:26:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 11,\n        \"nomor_induk\": \"IP06011\",\n        \"nama\": \"Markus\",\n        \"alamat\": \"Jln Gaja Mada no 01, Surabaya\",\n        \"tanggal_lahir\": \"13-Jan-1992\",\n        \"tanggal_masuk\": \"09-Aug-2011\"\n    }\n}"
+								},
+								{
+									"name": "Failed",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nomor_induk\": \"IP06011\",\r\n    \"nama\": \"Mark\",\r\n    \"alamat\": \"Jln Gaja Mada no 01, Surabaya\",\r\n    \"tanggal_lahir\": \"13-Jan-92\",\r\n    \"tanggal_masuk\": \"09-Aug-11\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan/11",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan",
+												"11"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:24:29 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:24:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Employee not found\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Data Karyawan",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/karyawan/11",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"karyawan",
+										"11"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan/11",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan",
+												"11"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:28:39 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:28:39 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Employee deleted\"\n}"
+								},
+								{
+									"name": "Failed",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/karyawan/11",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"karyawan",
+												"11"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:29:22 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 09:29:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Employee not found\"\n}"
+								}
+							]
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Get 3 Data Karyawan Pertama Bergabung",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/karyawan/senior",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"karyawan",
+								"senior"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/karyawan/senior",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"karyawan",
+										"senior"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 09:10:00 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 09:10:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"nomor_induk\": \"IP06002\",\n            \"nama\": \"Amin\",\n            \"alamat\": \"Jln Imam Bonjol no 11, Mojokerto\",\n            \"tanggal_lahir\": \"03-Sep-1977\",\n            \"tanggal_masuk\": \"07-Aug-2005\"\n        },\n        {\n            \"id\": 1,\n            \"nomor_induk\": \"IP06001\",\n            \"nama\": \"Agus\",\n            \"alamat\": \"Jln Gaja Mada no 12, Surabaya\",\n            \"tanggal_lahir\": \"11-Jan-1980\",\n            \"tanggal_masuk\": \"07-Aug-2005\"\n        },\n        {\n            \"id\": 3,\n            \"nomor_induk\": \"IP06003\",\n            \"nama\": \"Yusuf\",\n            \"alamat\": \"Jln A Yani Raya 15 No 14 Malang\",\n            \"tanggal_lahir\": \"09-Aug-1973\",\n            \"tanggal_masuk\": \"07-Aug-2006\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Data Karyawan Pernah Cuti",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/cuti",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"cuti"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/cuti",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"cuti"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 09:10:26 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 09:10:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nomor_induk\": \"IP06001\",\n            \"nama\": \"Agus\",\n            \"alamat\": \"Jln Gaja Mada no 12, Surabaya\",\n            \"tanggal_lahir\": \"11-Jan-1980\",\n            \"tanggal_masuk\": \"07-Aug-2005\",\n            \"total_cuti\": 4\n        },\n        {\n            \"id\": 3,\n            \"nomor_induk\": \"IP06003\",\n            \"nama\": \"Yusuf\",\n            \"alamat\": \"Jln A Yani Raya 15 No 14 Malang\",\n            \"tanggal_lahir\": \"09-Aug-1973\",\n            \"tanggal_masuk\": \"07-Aug-2006\",\n            \"total_cuti\": 2\n        },\n        {\n            \"id\": 4,\n            \"nomor_induk\": \"IP06004\",\n            \"nama\": \"Alyssa\",\n            \"alamat\": \"Jln Bungur Sari V no 166, Bandung\",\n            \"tanggal_lahir\": \"18-Mar-1983\",\n            \"tanggal_masuk\": \"06-Sep-2006\",\n            \"total_cuti\": 5\n        },\n        {\n            \"id\": 6,\n            \"nomor_induk\": \"IP06006\",\n            \"nama\": \"Agfika\",\n            \"alamat\": \"Jln Nangka, Jakarta Timur\",\n            \"tanggal_lahir\": \"07-Feb-1979\",\n            \"tanggal_masuk\": \"02-Jan-2007\",\n            \"total_cuti\": 1\n        },\n        {\n            \"id\": 7,\n            \"nomor_induk\": \"IP06007\",\n            \"nama\": \"James\",\n            \"alamat\": \"Jln Merpati, 8 Surabaya\",\n            \"tanggal_lahir\": \"18-May-1989\",\n            \"tanggal_masuk\": \"04-Apr-2007\",\n            \"total_cuti\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Data Kuota Cuti Karyawan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/cuti/kuota",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"cuti",
+								"kuota"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/cuti/kuota",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"cuti",
+										"kuota"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 09:10:38 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 09:10:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"nomor_induk\": \"IP06001\",\n            \"nama\": \"Agus\",\n            \"sisa_cuti\": 10\n        },\n        {\n            \"nomor_induk\": \"IP06002\",\n            \"nama\": \"Amin\",\n            \"sisa_cuti\": 12\n        },\n        {\n            \"nomor_induk\": \"IP06003\",\n            \"nama\": \"Yusuf\",\n            \"sisa_cuti\": 11\n        },\n        {\n            \"nomor_induk\": \"IP06004\",\n            \"nama\": \"Alyssa\",\n            \"sisa_cuti\": 11\n        },\n        {\n            \"nomor_induk\": \"IP06005\",\n            \"nama\": \"Maulana\",\n            \"sisa_cuti\": 12\n        },\n        {\n            \"nomor_induk\": \"IP06006\",\n            \"nama\": \"Agfika\",\n            \"sisa_cuti\": 11\n        },\n        {\n            \"nomor_induk\": \"IP06007\",\n            \"nama\": \"James\",\n            \"sisa_cuti\": 11\n        },\n        {\n            \"nomor_induk\": \"IP06008\",\n            \"nama\": \"Octavanus\",\n            \"sisa_cuti\": 12\n        },\n        {\n            \"nomor_induk\": \"IP06009\",\n            \"nama\": \"Nugroho\",\n            \"sisa_cuti\": 12\n        },\n        {\n            \"nomor_induk\": \"IP06010\",\n            \"nama\": \"Raisa\",\n            \"sisa_cuti\": 12\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 11:17:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 11:17:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User logged out successfully\"\n}"
+						},
+						{
+							"name": "Failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 11:17:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 11:17:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+						}
+					]
+				}
+			],
+			"description": "Semua Request di sini membutuhkan Autentikasi untuk mengaksesnya.\n\n> **Penting: Gunakan Authorization dengan type Bearer!**  \nMenggunakan Auth Sanctum",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{accessToken}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Public Routes",
+			"item": [
+				{
+					"name": "User Authentication",
+					"item": [
+						{
+							"name": "Register User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"zain\",\r\n    \"email\": \"zain@admin.com\",\r\n    \"password\": \"123\",\r\n    \"password_confirmation\": \"123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"zain\",\r\n    \"email\": \"zain@admin.com\",\r\n    \"password\": \"123\",\r\n    \"password_confirmation\": \"123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/register",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 10:35:08 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 10:35:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"User created successfully\",\n    \"token\": \"1|n1nEMTAGi46tw0ScEdJYhnzKhsLRffefGef8fuVG\"\n}"
+								},
+								{
+									"name": "Failed",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"123\",\r\n    \"password_confirmation\": \"123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/register",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"register"
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 10:34:35 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 10:34:35 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The email has already been taken.\",\n    \"errors\": {\n        \"email\": [\n            \"The email has already been taken.\"\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Login User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Failed",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"login"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 11:54:18 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 11:54:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "60"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid login credentials\"\n}"
+								},
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 11:54:41 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 22 Jul 2023 11:54:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.6"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"User logged in successfully\",\n    \"token\": \"2|FmRT93qcWk0XxWPf8ELrwoiHUrIxXUbxs8d4ZFvd\"\n}"
+								}
+							]
+						}
+					],
+					"description": "User Authentication with Auth Sanctum Implementation"
+				}
+			],
+			"description": "Semua Request di sini tidak membutuhkan Autentikasi untuk mengaksesnya."
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "accessToken",
+			"value": "Your Access Token",
+			"type": "string"
+		}
+	]
+}
